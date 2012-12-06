@@ -24,7 +24,6 @@ proc merge {left right} {
 	set result ""
 
 	while { [llength $left] > 0 || [llength $right] > 0 } {
-
 		if { [llength $left] > 0 && [llength $right] > 0 } {
 			if { [lindex $left 0] <= [lindex $right 0] } {
 				lappend result [lindex $left 0]
